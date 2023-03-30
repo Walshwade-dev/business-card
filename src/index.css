@@ -24,6 +24,7 @@ body {
     --text: #120425;
     --title: #3b1c06;
     --background: #57c5b694;
+    --mobile-bakcground: #57c5b6;
     --bg-footer:#0B2447;
 }
 
@@ -32,6 +33,7 @@ body {
     --text: #c7c1c1;
     --title: #adff2f;
     --background: #031f3fc7;
+    --mobile-bakcground: #031f3f;
     --bg-footer:#19192f;
 }
 
@@ -365,6 +367,7 @@ footer {
         left:50%;
         transform: translate(-50%, -50%);
         width: 19.813rem;
+        background: var(--mobile-bakcground);
     }
     
 
