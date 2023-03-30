@@ -8,9 +8,9 @@
 
 body {
     background-image: 
-        linear-gradient(-15deg,
+        linear-gradient(235deg,
         rgba(0, 0, 0, 0.8),
-        rgba(56, 56, 246, 0.392)),
+        rgba(28, 76, 100, 0.3)),
         url('./bg.jpg');
     
     background-repeat: no-repeat;
@@ -21,16 +21,18 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    --text: #4D4D4D;
-    --background: #FFBF9B;
-    --bg-footer:#4D4D4D;
+    --text: #120425;
+    --title: #3b1c06;
+    --background: #57c5b694;
+    --bg-footer:#0B2447;
 }
 
 
 .dark {
-    --text: #159895;
-    --background: #002B5B;
-    --bg-footer:#2D2727;
+    --text: #c7c1c1;
+    --title: #adff2f;
+    --background: #031f3fc7;
+    --bg-footer:#19192f;
 }
 
 /* ====> Nav section start <==== */
@@ -55,7 +57,7 @@ nav {
 .toggler--slider {
     width: 2rem;
     height: 1rem;
-    background-color: #FFF2CC;
+    background-color: #15989675;
     border-radius: 2rem;
     margin-inline: 1.5rem;
     cursor: pointer;
@@ -69,13 +71,13 @@ nav {
 
 nav.dark .toggler--slider {
     justify-content: flex-end;
-    background-color: #484848;
+    background-color: #031f3fc7;
 }
 
 .toggler--circle {
     height: 1rem;
     width: 1rem;
-    background-color: rgba(255, 0, 0, 0.57);
+    background-color: #031f3fc7;
     border-radius: 50%;
 }
 
@@ -127,14 +129,14 @@ main {
     font-size: .9rem;
     line-height: 0.9rem;
   
-    color: var(--text);
+    color: var(--title);
   }
-  
+
   
   .contact,h6 {
     margin: 0;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 150%;
   
     color: var(--text);
@@ -339,12 +341,6 @@ footer {
 
 /*  ====> Media query section <====  */
 
-@media screen and (min-width:390px ) {
-  
-} 
-
-
-
 @media screen and (min-width:640px ) {
 
     nav {
@@ -398,7 +394,7 @@ footer {
         left: 50%;
         padding: 0;
         transform: translate(-50%, -50%);
-        width: 19.813rem;
+        width: 19.9rem;
         height: 45rem;
     }
 
@@ -410,10 +406,10 @@ footer {
 
     main {
         position: fixed;
-        top:67.5%;
+        top:64%;
         left:50%;
         transform: translate(-50%, -50%);
-        width: 19.813rem;
+        width: 19.9rem;
     }
     
 
@@ -421,10 +417,10 @@ footer {
     footer {
         position: fixed;
         z-index: 2;
-        bottom: 0%;
+        bottom: 10%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 19.813rem;
+        width: 19.9rem;
         height: 4em;
         background: var(--bg-footer);
 
